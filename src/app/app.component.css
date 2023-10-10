@@ -50,3 +50,9 @@ app-emp {
     border-radius: 16px;
     margin: auto;
 }
+
+.text-secondary,
+thead td {
+    font-weight: 500;
+    color: aliceblue;
+}
