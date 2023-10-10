@@ -1,0 +1,74 @@
+<div class="container-fluid g-0 p-2 custom-container">
+    <div class="row g-0">
+        <div class="col-md-2 d-flex justify-content-center align-items-center img">
+            <img src="https://assets.ayobandung.com/crop/0x0:720x648/750x0/webp/photo/2023/06/22/IMG_20230622_191327-989536926.jpg"
+                alt="profile" class="profile">
+        </div>
+        <div class="col ps-2">
+            <div class="row g-0">
+                <div class="col-md-8 text-center">
+                    <span class="name">{{employee.fName | titlecase}}</span>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-success" (click)="editClicked()">Edit</button>
+                        <button type="button" class="btn btn-outline-danger" (click)="deleteClicked()">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 mt-3">
+                <div class="col-md">
+                    <table class="table table-hover mx-auto">
+                        <thead class="text-center text-secondary fst-italic fs-5">
+                            <tr>
+                                <td colspan=" 2">Personal Details</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BirthDate</td>
+                                <td>{{employee.dob | titlecase}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>Gender</td>
+                                <td>{{employee.gender == 'm' ? "Male" : "Female"}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>Education</td>
+                                <td>{{employee.education}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col">
+                    <table class="table table-hover mx-auto">
+                        <thead class="text-center text-secondary fst-italic fs-5">
+                            <tr>
+                                <td colspan="2">Job Details</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Company</td>
+                                <td>{{employee.company | titlecase}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>Experience</td>
+                                <td>{{employee.exp}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>Salary</td>
+                                <td>{{employee.salary}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

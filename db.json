@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "fName": "zhenyuan",
+      "lName": "chen",
+      "education": "Post Graduate",
+      "dob": "1996-10-29",
+      "gender": "m",
+      "exp": 8,
+      "company": "yoyo",
+      "salary": 15,
+      "id": 1
+    },
+    {
+      "fName": "taehyung",
+      "lName": "kim",
+      "education": "Post Graduate",
+      "dob": "1996-12-30",
+      "gender": "m",
+      "exp": 14,
+      "company": "hybe labels",
+      "salary": 122,
+      "id": 2
+    },
+    {
+      "fName": "jungkook",
+      "lName": "jeon",
+      "education": "Graduate",
+      "dob": "1998-09-01",
+      "gender": "m",
+      "exp": 14,
+      "company": "hybe labels",
+      "salary": 144,
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
